@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<a href="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/[location]/[date1]/[date2]?key=YOUR_API_KEY "></a>
+	<link rel="stylesheet" href="style.css">
+	
+	<title>GFG App</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="weathercard">
+			
+			<h1>
+				Weather App
+			</h1>
+			<input type="text" id="city-input"
+				placeholder="Enter city name">
+			<button id="city-button"
+					onclick="weatherFn($('#city-input').val())">
+					Get Weather
+			</button>
+			<div id="weather-info"
+				class="animate__fadeIn">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+				<img id="weather-icon" src="🌡" alt="Weather Icon">
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="script.js"></script>
+</body>
+
+</html>
